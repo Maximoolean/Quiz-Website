@@ -1,3 +1,4 @@
+// Initialize variables
 const startButton = document.getElementById('start')
 const nextButton = document.getElementById('next')
 const questionContainerElement = document.getElementById('question-container')
@@ -7,6 +8,7 @@ const homeButton = document.getElementById('home')
 
 let shuffledQuestions, currentQuestionIndex
 
+// Gives functionality to the start and next buttons
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
