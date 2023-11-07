@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --normal: #00798C;
+    --wrong: #D1495B;
+    --correct: #98DFAF;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #00798C;
+}
+
+.container {
+    width: 600px;
+    max-width: 80%;
+    background-color: #FFD447;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 121, 140, 0.7);
+    padding: 10px 20px;
+}
+
+.quiz-selection {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.quiz-selection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quiz-selection a {
+    position: relative;
+    display: inline-block; /* Ensures the <a> elements only take as much width as necessary */
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --color: var(--normal);
+    background-color: var(--color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+.btn.correct {
+    --color: var(--correct);
+    color: black;
+}
+
+.btn.wrong {
+    --color: var(--wrong);
+}
+
+.start.btn, .next.btn, .home.btn{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
