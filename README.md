@@ -10,13 +10,13 @@ Now navigate to the browser of your choice and go to 'localhost:3000'
 # Web Pages
 
 * index.html
-- Contains links that navigate to the available quizzes
+Contains links that navigate to the available quizzes
 
 * quiz1.html
-- A dark souls quiz that displays questions, correct answers, displays your final score, then gives you the option to try again or return to the index.html
+A dark souls quiz that displays questions, correct answers, displays your final score, then gives you the option to try again or return to the index.html
 
 * quiz2.html
-- A general trivia quiz that displays questions, correct answers, displays your final score, then gives you the option to try again or return to the index.html
+A general trivia quiz that displays questions, correct answers, displays your final score, then gives you the option to try again or return to the index.html
 
 # Development Environment
 
